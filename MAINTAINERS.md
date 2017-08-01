@@ -99,6 +99,10 @@ $> curl https://fr-1.storage.online.net/scaleway/scaleway-cli/VERSION
 Our [QA repository](https://github.com/scaleway/qa) used to build images with travis relies on scaleway-cli and its package.
 At the moment, the full path to the package is linked in .travis.yaml so we need to update it after a release.
 
+* Clone the QA repository: git clone https://github.com/scaleway/qa.git
+* Edit .travis.yaml and update the URL to scaleway-cli
+* Commit and push
+
 ### Post release commit
 
 * Edit [README.md](README.md) and create a new *(unreleased)* entry:
